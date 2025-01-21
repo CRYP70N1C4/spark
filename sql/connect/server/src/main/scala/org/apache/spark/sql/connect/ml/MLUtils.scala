@@ -442,7 +442,20 @@ private[ml] object MLUtils {
     "residuals", // LinearRegressionSummary
     "rootMeanSquaredError", // LinearRegressionSummary
     "tValues", // LinearRegressionSummary
-    "totalIterations" // LinearRegressionSummary
+    "totalIterations", // LinearRegressionSummary
+    "k", // KMeansSummary
+    "numIter", // KMeansSummary
+    "clusterSizes", // KMeansSummary
+    "trainingCost", // KMeansSummary
+    "cluster", // KMeansSummary
+    "computeCost", // BisectingKMeansModel
+    "rank", // ALSModel
+    "itemFactors", // ALSModel
+    "userFactors", // ALSModel
+    "recommendForAllUsers", // ALSModel
+    "recommendForAllItems", // ALSModel
+    "recommendForUserSubset", // ALSModel
+    "recommendForItemSubset" // ALSModel
   )
 
   def invokeMethodAllowed(obj: Object, methodName: String): Object = {
